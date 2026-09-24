@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-图10: 甘特图
-水平堆叠柱形图：开始日期(透明占位) + 项目天数(蓝色)
-背景: 深藏青色 #1A1E43, 文字: 白色
-"""
 import matplotlib.pyplot as plt
 import datetime
 import numpy as np
@@ -24,7 +18,6 @@ start_dates = [
 ]
 durations = [11, 8, 10, 13, 24, 14, 7]
 
-# 转换为相对于最早日期的天数
 base_date = min(start_dates)
 start_offsets = [(d - base_date).days for d in start_dates]
 
