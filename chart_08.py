@@ -1,17 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-图8: 数值百分比
-水平堆叠柱形图：深蓝=销量，浅蓝=占位填充，红色=间隔(显示同比百分比)
-背景: 深藏青色 #1A1E43, 文字: 白色
-
-Excel样式细节:
-- Series 0 (销量): #09387E, 数据标签 inEnd (深蓝段右端内侧), 10pt
-- Series 1 (占位1): #82ADD7, 无标签
-- Series 2 (占位2): #9B3D4F, 自定义标签(同比百分比) 居中, 10pt
-- gapWidth=30, overlap=100
-- 绘图区: x=0.127, y=0.281, w=0.817, h=0.609
-- Y轴(数值)删除, X轴(类别)左侧显示, 9pt
-"""
 import matplotlib.pyplot as plt
 import numpy as np
 import os
@@ -71,10 +57,6 @@ ax.spines['bottom'].set_visible(False)
 ax.spines['left'].set_visible(False)
 ax.tick_params(axis='x', which='both', bottom=False, labelbottom=False)
 ax.tick_params(axis='y', which='both', left=False, length=0)
-
-# ========== 文字标注（匹配Excel绘图区比例） ==========
-# Excel绘图区: x=0.127, y=0.281, w=0.817, h=0.609
-# 标题在绘图区上方
 fig.text(0.05, 0.95, '2021年各区域销量及同比情况', fontsize=18, fontweight='bold',
          color='white', ha='left', va='top')
 # 描述在标题下方
