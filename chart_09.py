@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-图9: 对比柱形图
-柱形图+误差线：2021销量(蓝) vs 2022销量(浅蓝)，误差线显示差值
-背景: 深藏青色 #1A1E43, 文字: 白色
-"""
 import matplotlib.pyplot as plt
 import numpy as np
 import os
